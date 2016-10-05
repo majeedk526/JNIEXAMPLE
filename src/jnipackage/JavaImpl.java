@@ -9,10 +9,17 @@ public class JavaImpl {
 	static {System.loadLibrary("CImpl");}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
+		JavaImpl jimpl = new JavaImpl();
 		
+		jimpl.printMsg("Message from java");
+		System.out.println(jimpl.getSquare(5));
 		
+		int sqrs[] = jimpl.getSquares(new int[]{1,2,3,4,5,6});
+		for(int i=0; i<sqrs.length; i++){
+			System.out.print(sqrs[i] + "\t");
+		}
+		System.out.println("");
 	}
 
 }
